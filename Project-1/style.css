@@ -1,0 +1,12 @@
+ul{
+    display: flex;
+}
+li{
+    margin: 15px;
+    font-size: 20px;
+    list-style: none;
+}
+.update{
+    margin-left: 80px;
+    margin-right: 40px;
+}
