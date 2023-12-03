@@ -19,6 +19,17 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script type="text/javascript">
+
+     axios.post('https://crudcrud.com/api/e107943b75734a25a5b0bad707c4cec5/UsersData',obj)
+    .then(res=>{
+        showUserOnScreen(res.data)
+        //console.log(res)
+    } )
+    .catch(err=>{
+        document.body.innerHTML = document.body.innerHTML+"<h4>Something went wrong</h4>"
+    })
+}
+
     
 
 
