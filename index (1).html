@@ -51,6 +51,17 @@
     // }
 })
 
+
+     dltBtn.onclick=()=>{
+        // localStorage.removeItem(obj.email);
+        // parentElement.removeChild(childElement);
+        const id = obj._id;
+        axios.delete(`https://crudcrud.com/api/e107943b75734a25a5b0bad707c4cec5/UsersData/${id}`)
+        .then(res=>{ 
+            parentElement.removeChild(childElement);
+        }).catch(err=>console.log(err))
+    }
+
     
 
 
