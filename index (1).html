@@ -30,6 +30,27 @@
     })
 }
 
+    window.addEventListener('DOMContentLoaded',()=>{
+
+    axios.get('https://crudcrud.com/api/e107943b75734a25a5b0bad707c4cec5/UsersData')
+    .then((res)=>{
+       for(var i=0;i<res.data.length;i++){
+        showUserOnScreen(res.data[i])
+       }
+    })
+
+    // const localStorageObj = localStorage;
+    // const localStorageKeys = Object.keys(localStorageObj);
+
+    // for(var i=0;i<localStorageKeys.length;i++){
+    //     const key = localStorageKeys[i];
+    //     const userDetailsString = localStorageObj[key];
+    //     const userDetailsObj = JSON.parse(userDetailsString);
+
+    //     showUserOnScreen(userDetailsObj);
+    // }
+})
+
     
 
 
