@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>CRUD operations using Local Storage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <fieldset>
+    <legend>
+      <h2>Form</h2>
+    </legend>
+    <form id="form">
+      <input type="text" id="name" name="name" placeholder="Product Name"><br><br>
+      <input type="text" id="desc" name="jon" placeholder="Description"><br><br>
+      <input type="number" id="price" name="exp" placeholder="Price"><br><br>
+      <input type="button" value="Add" id="btn" onclick="Submit()">
+      <input type="reset">
+    </form>
+  </fieldset>
+
+
+  <br>
+  <div id="msg"></div>
+
+
+  <fieldset>
+    <legend>
+      <h2>Data from Local Storage</h2>
+    </legend>
+
+    <table border="2" id="table">
+      <tr>
+        <td class="col">Product Name</td>
+        <td class="col">Description</td>
+        <td class="col">Price</td>
+        <td class="col">Action</td>
+      </tr>
+    </table>
+  </fieldset>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
