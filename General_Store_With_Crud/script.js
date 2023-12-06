@@ -81,8 +81,8 @@ function edit(td) {
 }
 
 // UPDATE
-function update(td) {
-  row = td.parentElement.parentElement;
+function update() {
+
   row.cells[0].innerHTML = document.getElementById("name").value;
   row.cells[1].innerHTML = document.getElementById("desc").value;
   row.cells[2].innerHTML = document.getElementById("price").value;
